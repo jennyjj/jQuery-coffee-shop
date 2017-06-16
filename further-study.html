@@ -66,16 +66,17 @@
         myRevenueMessage.innerHTML = "Today's revenues: " + myRevenue;
 
         myImage.attr('src', "static/coffee_machine.jpg");
+        myImage.fadeOut();
 
         setTimeout(function () {
             myImage.attr('src', "static/coffee_mug.jpg");
         }, 1500);
-
+        
         setTimeout(function () {
             myImage.attr('src', "static/coffee_beans.jpg");
         }, 4000);
+    
     }
-
 
     // Create variables for Espresso, Latte, and Hot Chocolate;
     // and add an event listener to each that calls makeCoffee.
