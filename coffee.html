@@ -47,11 +47,14 @@
 <script>
     "use strict";
 
+    var myImage = $('#coffee_image');
 
-    var myRevenueMessage = document.getElementById("revenue");
+    var myRevenueMessage = $('#revenue');
+
+    // var myRevenueMessage = document.getElementById("revenue");
 
 
-    $('#coffee_image').attr("src", "static/coffee_beans.jpg");
+    myImage.attr("src", "static/coffee_beans.jpg");
 
     // myImage.setAttribute("src", "static/coffee_beans.jpg");
 
@@ -61,14 +64,14 @@
 
 
     function makeCoffee() {
-        $('#coffee_image').attr("src", "static/coffee_machine.jpg");
+        myImage.attr("src", "static/coffee_machine.jpg");
 
          setTimeout(function() {
-        $('#coffee_image').attr("src", "static/coffee_mug.jpg");
+        myImage.attr("src", "static/coffee_mug.jpg");
          }, 1500);
 
          setTimeout(function() {
-        $('#coffee_image').attr("src", "static/coffee_beans.jpg");
+        myImage.attr("src", "static/coffee_beans.jpg");
          }, 4000);
     }
 
